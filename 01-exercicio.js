@@ -1,8 +1,3 @@
-/**
- * O dono irá informar o nome, idade, peso, raça e se é adotado ou não
- * a tag deve ter: O nome em letras maiúsculas e a raça com a primeira letra maiúscula
- */
-
 const dog = { 
     nome: 'Leão',
     idade: 14,
