@@ -1,4 +1,4 @@
- var dogsName = ['     Thor ', 'heLa', 'rEx@', 'branquinhA ', '  Tunico cheroso']
+ var dogsName = ['     Thor ', 'he1La', 'rEx@', 'branquinhA ', '  Tunico cheroso']
 
 for (let index = 0; index < dogsName.length; index++) {
     const element = dogsName[index].trim();
