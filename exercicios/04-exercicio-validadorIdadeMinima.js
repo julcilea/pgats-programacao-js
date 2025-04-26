@@ -27,9 +27,9 @@ function validarAdocao(nome,idade,porte){
 }
 
 console.log(`======== Validar adoção ===========`)
-validarAdocao('Pitico', 1, 'M')
+validarAdocao('Pit', 1, 'M')
 validarAdocao('Bolinha', 2, 'M')
-validarAdocao('Pitiquita', 2, 'P')
+validarAdocao('Pretinha', 2, 'P')
 validarAdocao('Madona', 1, 'P')
 validarAdocao('Leão', 14, 'G')
 console.log(`====================================`)
