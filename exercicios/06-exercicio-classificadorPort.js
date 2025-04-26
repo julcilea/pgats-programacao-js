@@ -13,10 +13,10 @@
 const classificadorDePorteAutomatico = (nome,pesoDog) => {
     console.log(`\nNome: ${nome}`)
     console.log(`Peso: ${pesoDog}`)
-    console.log(`Porte: ${pesoDog < 10 ? 'Pequeno' : 'Médio'}`)
+    console.log(`Porte: ${pesoDog <= 10 ? 'Pequeno' : 'Médio'}`)
 }
 
 console.log(`======== Classificador de porte automático ===========`)
 classificadorDePorteAutomatico('Bolinha', 10)
-classificadorDePorteAutomatico('Madona', 9)
+classificadorDePorteAutomatico('Madona', 11)
 console.log(`======================================================`)
