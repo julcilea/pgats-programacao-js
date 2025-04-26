@@ -7,10 +7,8 @@ const exibirNomeDog = (nome) => {
     console.log(`Nome: ${nome}`)
 }
 
-// Funcao nomeada, com parametro, com retorno default
-const exibirPorteDoDog = (porte = "ND") => {
-    console.log(`Porte: ${porte}`)
-}
+// Funcao nomeada, com parametro, com retorno default, sem bloco
+const exibirPorteDoDog = (porte = "ND") => console.log(`Porte: ${porte}`)
 
 // Função nomeada, com parametro, com retorno
 const obterNomeDogFormatado = (nome) =>{
