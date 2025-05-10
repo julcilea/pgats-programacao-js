@@ -1,0 +1,20 @@
+{
+  "name": "pgats-programacao",
+  "version": "1.0.0",
+  "description": "Exercícios executados na aula:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julcilea/pgats-programacao-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julcilea/pgats-programacao-js/issues"
+  },
+  "homepage": "https://github.com/julcilea/pgats-programacao-js#readme"
+}
