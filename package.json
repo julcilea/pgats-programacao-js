@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/julcilea/pgats-programacao-js/issues"
   },
-  "homepage": "https://github.com/julcilea/pgats-programacao-js#readme"
+  "homepage": "https://github.com/julcilea/pgats-programacao-js#readme",
+  "dependencies": {
+    "pgats-programacao": "file:"
+  }
 }
