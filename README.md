@@ -15,3 +15,14 @@ Executado o comando:
 npm init -y
 ```
 
+## Instalando o mocha
+
+```
+npm install -D mocha
+```
+
+## Executando os testes com mocha
+
+```
+npx mocha 'caminho do arquivo/arquivo.js'
+```
