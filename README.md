@@ -1,22 +1,17 @@
 # Módulo 03 - Programação para automação de testes
 
-Exercícios executados na aula:
+## Conceitos
 
-Exercício 01
+ - Conceitos do JS.
 
- - O dono irá informar o nome, idade, peso, raça e se é adotado ou não
- - a tag deve ter: O nome em letras maiúsculas e a raça com a primeira letra maiúscula
+## Exercicios
 
-Exercicio 02
+- Exercicios eutados para treinamento dos conceitos.
 
-- Validador de nomes para as tags
-- Alguns donos estão registrando os dogs com nomes mal formatados. Crie um script para limpar epadronizar os nomes.
-- Aplique as formatações e exiba:
-  - O nome original, como foi cadastrado
-  - O nome formatado
+## Modularização
+Executado o comando:
 
-Extra: aplique uma regra que confira se o nome informado possui apenas uma palavra. Exiba se o nome é válido ou não.
+```
+npm init -y
+```
 
-Exercicio 03
-
-- Repita o processo feito em aula e crie um novo repositório no Github. Crie o repositório, conecte ao seu projeto local e depois suba os arquivos.
