@@ -12,9 +12,9 @@
  * Extra: transforme a logica em uma função ( da forma que conseguir)
  */
 
-function controleDePetiscos(quantidadePetiscos) {
+const controleDePetiscos = (quantidadePetiscos) => {
     for (let i = 1; i <= quantidadePetiscos; i++) {
-        console.log(`Petisco ${i} entregue.`)
+        console.log(` ${i}º petisco entregue.`)
     }
     console.log("O Dog Está satisfeito, todos os petiscos foram entregues.")
 }
