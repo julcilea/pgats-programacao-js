@@ -14,6 +14,7 @@ try {
     // Código que pode gerar um erro
     console.log(`Tentando alimentar o Pet...`)
     throw new Error('Pet não quis comer')
+    console.log(`Nada depois do erro será executado`)
 } catch (excessao) {
     // Captura o erro e executa este bloco
     console.error("Name:", excessao.name)
