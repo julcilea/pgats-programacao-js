@@ -3,6 +3,5 @@
  * 
  * dados da modularização
  */
-const DOGS = ['Rex', 'Leão', 'Madona'];
-
-export { DOGS } // exportando a lista de cães
+export const DOGS = ['Rex', 'Leão', 'Madona']
+export const GATOS = ['Tigor', 'Iris', 'Demian']

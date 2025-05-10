@@ -8,12 +8,10 @@
  * Mantenha os dados e a função em arquivos separados; use modularização para organizar.
  */
 
-import { DOGS } from "./11-exercicio-dadosModularizacao.js" // importando a lista de cães do arquivo exercicio-modularizacao.js
-
 function entregarPetiscos(dogs) {
   dogs.forEach(dog => {
     console.log(`Entregando petisco para ${dog}`);
   });
 }
 
-entregarPetiscos(DOGS);
+export { entregarPetiscos } // exportando a função
