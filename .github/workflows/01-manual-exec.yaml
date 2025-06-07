@@ -8,6 +8,10 @@ name: 'Execução Manual'
 on:
   workflow_dispatch:
 
+permissions:
+  checks: write
+  contents: read  
+
 # trabalhos/tarefas dentro do pipeline = jobs
 jobs:
   unidade:
