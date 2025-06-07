@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "test": "mocha Trabalho-final/trabalho-final.js --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/results.xml --reporter mochawesome --reporter-options reportDir=./test-results,reportFilename=unit-test-report,quiet=true",
     "test:unit": "mocha Trabalho-final/trabalho-final.js --reporter mochawesome --reporter-options reportDir=./test-results,reportFilename=unit-test-report,quiet=true"
   },
   "repository": {
