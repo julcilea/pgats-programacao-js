@@ -31,11 +31,10 @@ jobs:
       - name: Instalando dependências do projeto
         run: npm install  
 
-       # Executa testes e gera o relatório em HTML
-      - name: Executando testes com relatório HTML
-        run: yarn test:html
+      - name: Executando testes unitários com relatório
+        run: npx mocha Trabalho-final/trabalho-final.js --reporter mochawesome
 
-      - name: Salvando relatório mochawesome como artefato
+      - name: Salvando relatório de testes
         uses: actions/upload-artifact@v4
         with:
           name: relatorio-testes
@@ -43,7 +42,7 @@ jobs:
 
       # Executa testes para gerar o arquivo XML para a UI do GitHub
       - name: Executando testes com JUnit XML
-        run: yarn test:xml
+        run: yarn test
 
       - name: Publicar resultado
         uses: dorny/test-reporter@v1
