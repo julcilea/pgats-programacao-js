@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha testes/trabalho-final.js --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=mochawesome.html,overwrite=true,json=false --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/results.xml"
+    "test": "mocha Trabalho-final/trabalho-final.js --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=mochawesome.html,overwrite=true,json=false --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/results.xml"
   },
   "repository": {
     "type": "git",
