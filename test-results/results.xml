@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.003" tests="3" failures="0">
-  <testsuite name="Root Suite" timestamp="2025-06-07T20:43:57" tests="0" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="0.106" tests="5" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-06-07T21:30:14" tests="0" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="Testes do Projeto" timestamp="2025-06-07T20:43:57" tests="3" file="C:\Users\julci\OneDrive\Documents\pgats-programacao-js\testes\01-testes.js" time="0.002" failures="0">
-    <testcase name="Testes do Projeto deve exibir o nome do dog com letras maiúsculas" time="0.000" classname="deve exibir o nome do dog com letras maiúsculas">
+  <testsuite name="Testes da disciplina - fundamentos JS" timestamp="2025-06-07T21:30:14" tests="5" file="C:\Users\julci\OneDrive\Documents\pgats-programacao-js\Trabalho-final\trabalho-final.js" time="0.105" failures="0">
+    <testcase name="Testes da disciplina - fundamentos JS QUANDO informar um nome para o Pet, DEVE ser impresso na tag com letras maiúsculas" time="0.000" classname="QUANDO informar um nome para o Pet, DEVE ser impresso na tag com letras maiúsculas">
     </testcase>
-    <testcase name="Testes do Projeto primeiro teste" time="0.000" classname="primeiro teste">
+    <testcase name="Testes da disciplina - fundamentos JS QUANDO a idade = 1 + porte M, DEVE ser permitida a adoção" time="0.000" classname="QUANDO a idade = 1 + porte M, DEVE ser permitida a adoção">
     </testcase>
-    <testcase name="Testes do Projeto segundo teste" time="0.000" classname="segundo teste">
+    <testcase name="Testes da disciplina - fundamentos JS QUANDO o peso = 14.5, DEVE ser retornado 4350 gramas para o consumo diário" time="0.000" classname="QUANDO o peso = 14.5, DEVE ser retornado 4350 gramas para o consumo diário">
+    </testcase>
+    <testcase name="Testes da disciplina - fundamentos JS QUANDO o porte = pequeno, DEVE ser retornada a atividade adequada" time="0.000" classname="QUANDO o porte = pequeno, DEVE ser retornada a atividade adequada">
+    </testcase>
+    <testcase name="Testes da disciplina - fundamentos JS QUANDO buscar dado de exemplo, DEVE retornar um valor de forma assíncrona" time="0.103" classname="QUANDO buscar dado de exemplo, DEVE retornar um valor de forma assíncrona">
     </testcase>
   </testsuite>
 </testsuites>

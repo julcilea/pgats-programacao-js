@@ -31,15 +31,19 @@ jobs:
       - name: Instalando dependências do projeto
         run: npm install  
 
-      - name: executando os testes unitários finais  
-        run: yarn test
+       # Executa testes e gera o relatório em HTML
+      - name: Executando testes com relatório HTML
+        run: yarn test:html
 
-      - name: Salvando relatório de testes
+      - name: Salvando relatório mochawesome como artefato
         uses: actions/upload-artifact@v4
-        if: ${{ !cancelled() }}
         with:
           name: relatorio-testes
-          path: mochawesome-report/mochawesome.html  
+          path: mochawesome-report/mochawesome.html
+
+      # Executa testes para gerar o arquivo XML para a UI do GitHub
+      - name: Executando testes com JUnit XML
+        run: yarn test:xml
 
       - name: Publicar resultado
         uses: dorny/test-reporter@v1
@@ -47,7 +51,5 @@ jobs:
         with:
           name: Test Report
           path: ./test-results/results.xml
-          reporter: java-junit
+          reporter: mocha-junit
           token: ${{ secrets.GITHUB_TOKEN }}
-
-      
