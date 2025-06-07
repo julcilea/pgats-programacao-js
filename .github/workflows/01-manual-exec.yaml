@@ -39,7 +39,7 @@ jobs:
         if: ${{ !cancelled() }}
         with:
           name: relatorio-testes
-          path: mochawesome-report/
+          path: test-results/
 
       - name: Publicar resultado
         uses: dorny/test-reporter@v1

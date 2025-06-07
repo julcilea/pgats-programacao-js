@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha Trabalho-final/trabalho-final.js --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=mochawesome.html,overwrite=true,json=false --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/results.xml",
-    "test:unit": "mocha Trabalho-final/trabalho-final.js --reporter mochawesome --reporter-options reportDir=./test-results,reportFilename=unit-test-report,quiet=true"
+    "test": "mocha Trabalho-final/trabalho-final.js --reporter mocha-multi-reporters --reporter-options configFile=multi-reporter-config.json"
   },
   "repository": {
     "type": "git",
@@ -24,6 +23,7 @@
   },
   "devDependencies": {
     "mocha-junit-reporter": "^2.2.1",
+    "mocha-multi-reporters": "^1.5.1",
     "mochawesome": "^7.1.3"
   }
 }
