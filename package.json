@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha testes/01-testes.js --reporter mochawesome --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/results.xml",
-    "test:final": "mocha Trabalho-final/trabalho-final.js --reporter mochawesome --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/results-final.xml",
-    "test:all": "npx mocha Trabalho-final/trabalho-final.js --reporter mochawesome"
+    "test:final": "mocha Trabalho-final/trabalho-final.js --reporter mochawesome --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/results-final.xml"
   },
   "repository": {
     "type": "git",

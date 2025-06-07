@@ -27,11 +27,8 @@ jobs:
       - name: Instalando dependências do projeto
         run: npm install  
 
-
-      - name: executando os tests unitários
-        run: yarn test
+      - name: executando os testes unitários finais  
         run: yarn test:final
-        run: yarn test:all
 
       - name: Salvando relatório de testes
         uses: actions/upload-artifact@v4
