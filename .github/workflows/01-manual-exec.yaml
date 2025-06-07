@@ -50,5 +50,5 @@ jobs:
         with:
           name: Test Report
           path: ./test-results/results.xml
-          reporter: mocha-junit
+          reporter: java-junit
           token: ${{ secrets.GITHUB_TOKEN }}
