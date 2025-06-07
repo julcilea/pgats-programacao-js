@@ -36,6 +36,7 @@ jobs:
 
       - name: Salvando relatório de testes
         uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
         with:
           name: relatorio-testes
           path: mochawesome-report/mochawesome.html  
