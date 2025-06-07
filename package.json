@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test:final": "mocha Trabalho-final/trabalho-final.js --reporter mochawesome --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/results-final.xml",
-    "test:report": "mocha Trabalho-final/trabalho-final.js --reporter mochawesome"
+    "test:final": "mocha Trabalho-final/trabalho-final.js --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/results-final.xml"  
   },
   "repository": {
     "type": "git",

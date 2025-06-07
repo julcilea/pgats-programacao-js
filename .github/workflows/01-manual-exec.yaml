@@ -32,7 +32,7 @@ jobs:
         run: npm install  
 
       - name: executando os testes unitários finais  
-        run: yarn test:report
+        run: npx mocha Trabalho-final/trabalho-final.js --reporter mochawesome
 
       - name: Salvando relatório de testes
         uses: actions/upload-artifact@v4
