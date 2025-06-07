@@ -27,6 +27,11 @@ jobs:
       - name: Instalando dependências do projeto
         run: npm install    
 
-      # execução dos testes
-      - name: Executando testes unitários
-        run: npx mocha Trabalho-final/trabalho-final.js
+      - name: Executando testes unitários com relatório
+        run: npx mocha Trabalho-final/trabalho-final.js --reporter mochawesome
+
+      - name: Salvando relatório de testes
+        uses: actions/upload-artifact@v4
+        with:
+          name: relatorio-testes
+          path: mochawesome-report/mochawesome.html

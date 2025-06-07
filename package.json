@@ -20,5 +20,8 @@
   "homepage": "https://github.com/julcilea/pgats-programacao-js#readme",
   "dependencies": {
     "pgats-programacao": "file:"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
   }
 }
