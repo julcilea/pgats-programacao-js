@@ -28,13 +28,16 @@ jobs:
         run: npm install  
 
       - name: executando os testes unitários finais  
-        run: yarn test:final
+        run: yarn test:report
 
       - name: Salvando relatório de testes
         uses: actions/upload-artifact@v4
         with:
           name: relatorio-testes
           path: mochawesome-report/mochawesome.html  
+
+      - name: executando os testes unitários finais  
+        run: yarn test:final    
 
       - name: Publicar resultado
         uses: dorny/test-reporter@v1
