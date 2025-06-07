@@ -32,7 +32,7 @@ jobs:
         run: npm install  
 
       - name: Executando testes unitários com relatório
-        run: npx mocha Trabalho-final/trabalho-final.js --reporter mochawesome
+        run: npx mocha Trabalho-final/trabalho-final.js --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=mochawesome,overwrite=true,json=false
 
       - name: Salvando relatório de testes
         uses: actions/upload-artifact@v4
