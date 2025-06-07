@@ -25,16 +25,18 @@ jobs:
           node-version: 22.x
 
       - name: Instalando dependências do projeto
-        run: npm install    
+        run: npm install  
 
-      - name: Executando testes unitários com relatório
-        run: yarn test
+        run: |
+          yarn test
+          yarn test:final
+          yarn test:all
 
-      - name: Executando testes finais unitários com relatório  
-        run: yarn test:final
-
-      - name: Executando testes unitários com relatório
-        run: npx mocha Trabalho-final/trabalho-final.js --reporter mochawesome    
+      - name: Salvando relatório de testes
+        uses: actions/upload-artifact@v4
+        with:
+          name: relatorio-testes
+          path: mochawesome-report/mochawesome.html  
 
       - name: Publicar resultado
         uses: dorny/test-reporter@v1
@@ -45,8 +47,4 @@ jobs:
           reporter: java-junit
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Salvando relatório de testes
-        uses: actions/upload-artifact@v4
-        with:
-          name: relatorio-testes
-          path: mochawesome-report/mochawesome.html
+      
