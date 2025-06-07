@@ -36,9 +36,10 @@ jobs:
 
       - name: Salvando relatório de testes
         uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
         with:
           name: relatorio-testes
-          path: mochawesome-report/mochawesome.html
+          path: mochawesome-report/
 
       # Executa testes para gerar o arquivo XML para a UI do GitHub
       - name: Executando testes com JUnit XML
